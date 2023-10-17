@@ -109,3 +109,22 @@ body * {
 #input button img {
   width: 50%;
 }
+
+#link {
+  margin: 190px 0 0 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 138.735%;
+}
+
+#link a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--bg-button-color);
+}
+
+#link a img {
+  width: 24px;
+}
