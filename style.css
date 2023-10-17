@@ -141,3 +141,40 @@ body * {
 #link a img {
   width: 24px;
 }
+
+@media (max-width: 700px) {
+  #container {
+    display: initial;
+  }
+
+  #news-bg-img-container,
+  #content-container {
+    flex-basis: unset;
+  }
+
+  #news-bg-img-container {
+    display: none;
+  }
+
+  #content-container,
+  #content-container form,
+  #link {
+    position: initial;
+  }
+
+  #content-container {
+    padding: 20px;
+  }
+
+  #content-container img {
+    width: 100%;
+  }
+
+  #content-container form {
+    width: 100%;
+  }
+
+  #link {
+    margin-top: 50px;
+  }
+}
