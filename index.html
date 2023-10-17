@@ -33,11 +33,17 @@
           <label for="email">
             Insira seu e-mail:
             <div id="input">
-              <input type="email" id="email" placeholder="oi@rocketseat.com" />
-              <button type="button">
+              <input
+                type="email"
+                id="email"
+                placeholder="oi@rocketseat.com"
+                required
+              />
+              <button type="submit">
                 <img src="./assets/send.svg" alt="Ícone de enviar" />
               </button>
             </div>
+            <span id="msg-container" hidden></span>
           </label>
         </form>
         <div id="link">
@@ -52,5 +58,6 @@
       </div>
       <div id="news-bg-img-container"></div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
