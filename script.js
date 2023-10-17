@@ -11,13 +11,14 @@ function handleClickSendEmail(e) {
     return;
   }
 
+  const wasEmailSaved = saveEmailInLocalStorage(email);
   let successMessage;
 
-  saveEmailInLocalStorage(email)
+  wasEmailSaved
     ? (successMessage = "E-mail salvo com sucesso!")
     : (successMessage = "E-mail já cadastrado!");
 
-  showFormValidationMessage(successMessage);
+  showFormValidationMessage(successMessage, !wasEmailSaved);
   setTimeout(hideFormValidationMessage, 3000);
 }
 
